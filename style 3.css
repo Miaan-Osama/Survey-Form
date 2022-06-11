@@ -1,0 +1,154 @@
+
+// Margin & Padding
+.dpdown {
+  margin-bottom: 2%;
+}
+
+// General
+* {
+  outline: 0 !important;
+}
+
+body {
+  padding: 5%;
+  margin-left: 100px;
+  margin-right: 100px;
+  background-color: #53c653;
+  align: center;
+}
+
+#survey-form {
+  text-align: center;
+}
+
+.header{
+  text-align: center;
+}
+
+.dpdown{
+  
+}
+
+.input-field {
+  width: 95%;
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  font-family: Times-New-Romans;
+  font-size: 40px;
+  color: #ff0000;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: Times-New-Romans;
+  font-size: 20px;
+  color: #000000;
+}
+
+.field-text {
+    font-family: Times-New-Romans;
+    font-size: 20px;
+    color: #000000;
+  }
+
+.fcc-like {
+  font-family: Times-New-Romans;
+  font-size: 20px;
+  display: inline;
+  margin-left: 75px;
+}
+
+#fcc-feature {
+  width: 95%;
+  margin: auto;
+  text-align: center;
+}
+
+#dropdown {
+  width: 95%;
+  margin: auto;
+  text-align: center;
+}
+
+.fcc-like {
+  display: block;
+  text-align: left;
+  margin-left: 250px;  
+  cursor: pointer;
+}
+
+.improvement {
+  display: block;
+  text-align: left;
+  margin-left: 250px;
+  cursor: pointer;
+}
+
+#inner {
+  font-family: Times-New-Romans;
+  font-size: 15px;
+}
+
+  textarea {
+    margin-top: 2%;
+    padding: 10px 10px 10px 10px;
+    width: 90%;
+    height: 90px;
+    color: #000000;
+    background-color: inherit;
+    border: 2px dotted #ff0000;
+  }
+
+  .btn {
+    display: inline-block;
+    position: relative;
+    width: 90%;
+    margin: 5% 0 0 0;
+    height: 45px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 2px solid #ff0000;
+    border-radius: 0;
+    font-size: 20px;
+    color: #ff0000;
+    text-align: center;
+    background: none;
+    transition: color 0.25s ease;
+
+    &:after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background-color: #ff6666;
+      transform-origin: left;
+      transition: width 0.5s ease;
+      z-index: -1;
+    }
+    &:hover {
+      background-color: #ff6666;
+      color: #000000;
+
+      &:after {
+        width: 100%;
+      }
+    }
+  }
+
+  fieldset {
+    margin: 5% 0% 0% 0%;
+    border: 1px solid #ff0000;
+  }
+
+
+// Responsive
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 8% 0;
+  }
+}

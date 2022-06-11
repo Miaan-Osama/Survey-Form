@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="style 3.css">
+</head>
+<body>
+
+</body>
+</html>
+
+<main id="main">
+         
+        <div class="header">
+            <h1 id="title">Survey Form</h1>
+            <p id="description"><i>Thank you for your valuable time to help in improving the <b>Company</b></i></p>
+         </div>
+        
+         <form method="GET" id="survey-form" name="survey-form">
+            
+           <fieldset>
+              <legend class="field-text"><label id="name-label">Name *</label></legend>
+               <input type="text" id="name" class="input-field" name="user-name" placeholder="Enter Your Full Name" required />
+            </fieldset>
+           
+            <fieldset>
+               <legend class="field-text"><label id="email-label">Email *</label></legend>
+               <input type="email" id="email" class="input-field" name="email" placeholder="Enter Valid Email" required />
+            </fieldset>
+           
+            <fieldset>
+              <legend class="field-text"><label id="number-label">Age *</label></legend>
+              <input type="number" id="number" class="input-field" name="age" min="10" max="100" placeholder="Enter Your Age" required />
+            </fieldset>
+           
+            <fieldset>
+               <legend class="field-text">Which option best describes your current role? *</legend>
+               <select id="dropdown" name="role-dropdown" class="dpdown">
+                     <option value="student" selected>Current Role</option>
+                     <option value="student">Student</option>
+                     <option value="full-time-job">Full Time Job</option>
+                     <option value="part-time-job">Part Time Job</option>
+                     <option value="full-time-learner">Full Time Learner</option>
+                     <option value="not-saying">Prefer Not to Say</option>
+                     <option value="other">Other</option>
+                  </select>
+            </fieldset>
+           
+            <fieldset>
+               <legend class="field-text"><label id="">How likely is that you would recommend <b>Comapny</b> to a friend? *</label></legend>
+               <label  class="fcc-like"><input type="radio" name="recomendation" value="definitely" id="radio-like" checked /> Definitely</label>
+               <label  class="fcc-like"><input type="radio" name="recomendation" value="maybe" id="radio-like" /> Maybe</label>
+               <label  class="fcc-like"><input type="radio" name="recomendation" value="notSure" id="radio-like" /> Not sure</lable>
+            </fieldset>
+                 
+            <fieldset>
+               <legend class="field-text">What do you like the best in <b>Company</b>:</legend>
+                <select id="fcc-feature" name="fcc-feature" class="">
+                     <option value="challenges" selected>Select Option</option>
+                     <option value="challenges">Challenges</option>
+                     <option value="projects">Projects</option>
+                     <option value="community">Community</option>
+                     <option value="openSource">Open Source</option>
+                  </select>
+            </fieldset>
+        
+            <fieldset>
+                <legend class="field-text"><label id="">Things you should like to improved in the future: <label id="inner">(Check all that apply)</label></label></legend>
+               <label for="sf-improve1" class="improvement">
+               <input type="checkbox" id="sf-improve1" value="feProjects">
+               Front-end Projects
+               </label>
+               <label for="sf-improve2" class="improvement">
+               <input type="checkbox" id="sf-improve2" value="beProjects">
+               Back-end Projects
+               </label>
+               <label for="sf-improve3" class="improvement">
+               <input type="checkbox" id="sf-improve3" value="dataVisualization">
+               Data Visualization
+               </label>
+               <label for="sf-improve4" class="improvement">
+               <input type="checkbox" id="sf-improve4" value="challenges">
+               Challenges
+               </label>
+               <label for="sf-improve5" class="improvement">
+               <input type="checkbox" id="sf-improve5" value="openSources">
+               Open Source Community
+               </label>
+               <label for="sf-improve6" class="improvement">
+               <input type="checkbox" id="sf-improve6" value="gitter">
+               Gitter help rooms
+               </label>
+               <label for="sf-improve7" class="improvement">
+               <input type="checkbox" id="sf-improve7" value="videos">
+               Videos
+               </label>
+               <label for="sf-improve8" class="improvement">
+               <input type="checkbox" id="sf-improve8" value="meetup">
+               City Meetups
+               </label>
+               <label for="sf-improve9" class="improvement">
+               <input type="checkbox" id="sf-improve9" value="wiki">
+               Wiki
+               </label>
+               <label for="sf-improve10" class="improvement">
+               <input type="checkbox" id="sf-improve10" value="forum">
+               Forum
+               </label>
+               <label for="sf-improve11" class="improvement">
+               <input type="checkbox" id="sf-improve11" value="additional">
+               Additional Courses
+               </label>
+            </fieldset>
+           
+            <fieldset>
+               <legend class="field-text"><label for="comSuggest">
+               Any Suggestions or Comments?</label></legend>
+               <textarea id="comSuggest" maxlength="200"></textarea>
+            </fieldset>
+           
+            <button id="submit" type="submit" class="btn">Submit the Survey Form</button>
+           
+         </form>
+</main>
